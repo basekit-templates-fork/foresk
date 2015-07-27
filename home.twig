@@ -4,21 +4,21 @@
 
 {% include "includes/header.twig" %}
 
-<div class="homepage-feature">
-	{{widget('feature', 'featurehome', {
-		"header": "profile", 
-		"defaultBgImg": asset('images/feature-bg.jpg'),
-		'positionTopPercentage': '0',
-		'showBtn': true,
-		buttonText: "Lorem Ipsum"
-	})|raw}}
+<div class="feature-container container">
+    <div class="feature-right-container">
+        {{widget('feature', 'feature-right', {
+            "header": "profile",
+            "strapline": "profile",
+            "defaultBgImg": asset('images/feature-bg.jpg'),
+            "positionTopPercentage": "50",
+            "showBtn": true,
+            "buttonText": "Lorem Ipsum"
+        })|raw}}
+    </div>
 </div>
 
-<!-- Container -->
-<div class="container">
-
 	<!-- Page Content -->
-	<section class="template-content">
+	<section class="template-content container">
 
 		<!-- Template Widgets -->
 		
@@ -29,9 +29,6 @@
 
 	</section>
 	<!-- End Page Content -->
-
-</div>
-<!-- End Container -->
 
 {% include "includes/footer.twig" %}
 
