@@ -944,20 +944,23 @@ input.input[type=search],
     margin-bottom: 10px;
 }
 
-.socialicons__social-item a:hover {
-    color: @font-swatch9-color;
+.social-item a:hover {
+    color: darken(@font-swatch9-color, 20%);
     text-decoration: none;
 }
 
-.socialicons__social-link {
+.social-link {
     padding: 17px 20px;
-    border: 1px solid @color-swatch4;
     padding: 10px;
     display: inline-block;
-        color: @font-swatch4-color;
+    color: @font-swatch4-color;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 
-
+.socialicons__social-name {
+    display: none;
+}
 
 
 // -----------------------------
@@ -1009,6 +1012,16 @@ input.input[type=search],
     border-bottom: 1px solid @color-swatch7;
     padding: 0 0 30px 0;
     margin: 0 0 30px 0;
+
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	
+    @media @mobile {
+        display: inherit;
+    }
+
     &:last-child {
         border-bottom:0;
         padding: 0 0 7px 0;
