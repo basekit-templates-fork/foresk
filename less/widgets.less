@@ -306,6 +306,7 @@
         position: relative;    
         min-width: 100%;
         width: 20px;
+        background-color: fade(@color-swatch4,50%);
     }
 }
 
@@ -841,8 +842,12 @@ button, .button {
 
 .phone-number-link {
     @media @mobile {
-        color: @font-swatch9-color;
+        color: @font-swatch8-color;
         background-color: @color-swatch3;
+        padding: 10px;
+        &:hover {
+            text-decoration: none;
+        }
     }
 }
 
@@ -862,9 +867,12 @@ button, .button {
 .responsiveslideshow__next-button, 
 .responsiveslideshow__previous-button,
 .responsiveslideshow__pause-toggle {
-    background-color: transparent;
+    background-color: fade(@color-swatch4, 50%);
     color: @font-swatch8-color;
-    border: 1px solid @color-swatch1;
+    border: 0;
+    &:hover {
+        border:0!important;
+    }
 }
 
 
