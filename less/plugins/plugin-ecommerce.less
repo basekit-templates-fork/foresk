@@ -25,7 +25,7 @@
 
 .ecomproduct__legend {
     padding: 36px 30px 20px;
-    width: initial;
+    width: inherit;
 }
 
 .ecomproduct__fieldset {
@@ -141,8 +141,13 @@
 // Basket Buttons
 .js-ecom-product-add-to-cart-btn {
     background-color: @color-swatch3;
-    color: @font-swatch7-color;
+    color: @color-swatch1;
     margin: 20px 0;
+    border: 0;
+    &:hover {
+        border: 0;
+        background-color: darken(@color-swatch3, 10%);
+    }
 }
 
 .ecom-product-go-to-checkout-btn {
