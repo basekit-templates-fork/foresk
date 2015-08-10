@@ -251,6 +251,7 @@
     top: 0;
     bottom: 8px;
     padding: 30px;
+    width: 48%;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -280,8 +281,6 @@
     -ms-flex-align: center;
     align-items: center;
     overflow: auto;
-    min-width: 100%;
-    width: 20px;
     &:after {
         display: block;
         content: '';
@@ -304,8 +303,9 @@
         margin-bottom: 20px;
     }
     @media @tablet {
-        width: 100%;
-        position: relative;
+        position: relative;    
+        min-width: 100%;
+        width: 20px;
     }
 }
 
